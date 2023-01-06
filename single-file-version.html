@@ -1,0 +1,213 @@
+<!-- Website by Cedar DeLacy [admin@agentseed.org], for Olygeek. Please do not remove this message. If you'd like a website email me, of course there's no way to regulate these kind of things, so do what you will. -->
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to OlyGeek!</title>
+<html>
+    <header>
+        <p id="banner">Welcome to Olygeek!</p>
+    </header>
+    <body onload="changeMarquee()">
+    <center>
+    <div class="panel">
+        <!-- <img src="https://oly-wa.us/olygeek/images/logo.gif" id="logo"> -->
+        <h1 id="title">Welcome to Olygeek!</h1>
+        <div id="linklist">
+        <a href="https://oly-wa.us/olygeek/Sales.php">Items</a> |
+        <a href="https://oly-wa.us/olygeek/Products.php">Products</a> |
+        <a href="https://oly-wa.us/olygeek/About.php">About</a> |
+        <a href="https://oly-wa.us/olygeek/Computers.php">Computers</a> |
+        <a href="https://oly-wa.us/olygeek/Recycling.php">Recycling</a> |
+        <a href="https://oly-wa.us/olygeek/DropOff.php">Drop Off</a> |
+        <a href="https://oly-wa.us/olygeek/Links.php">Links</a> |
+        <a href="https://oly-wa.us/olygeek/Involved.php">Get Involved</a> |
+        <a href="https://oly-wa.us/olygeek/Contacts.php">Contacts</a>
+        </div>
+        <hr class="w">
+        <p>
+            If you are trying to save money the new state law allows you can take e-waste to a number of places for free. However, their process will be to 'grind' them up for the recycling only.  OlyGeek charges a small fee, to help us make rent, but we try our best to reuse the donations.  We give free working computers to non-profits and to folks who volunteer with us.  We also have very inexpensive computers and parts for sale.  We are an all volunteer organization that tries to make rent with donations, retail sales, and money we get from the metals we do recycle. 
+        </p>
+        </div>
+        <br>
+        <div class="panel">
+        <ul>
+            <h3>Welcome to the wonderful world of 'free' computers!</h3>
+            <li>Do you have old computers around taking up room?  Bring them to us and we will get them going and give them a new life.</li>
+            <br>
+            <li>Do you a non-profit and need computers or help?  Give us a call and see what we can do for you.</li>
+            <br>
+            <li>Do you just need a computer?  Volunteer with us and earn one!</li>
+            <br>
+            <li>Don't have time to volunteer?  If we have extra computers, we sell them cheap!</li>
+            <br>
+            <li>Are you an individual who wants to know how computers work?  Get involved with us and learn a lot. </li>
+            <br>
+            We are all volunteers and currently are open <b> 
+            Call at other times to see if someone is there to let you in. 
+            To find us a <a href="map.php">map</a> is available.</b>
+        </ul>
+    </div>
+    <br>
+    <div class="panel">
+        <h3>Hours:</h3>
+        <p>1pm to 7pm on Mondays <i>(sometimes, call ahead)</i> </p>
+        <p>1pm to 7pm on Tuesdays <i>(guaranteed)</i></p>
+        <p>1pm to 7pm on Wednesdays <i>(sometimes, call ahead)</i></p>
+        <p>1pm to 7pm on Thursdays <i>(guaranteed)</i></p>
+        <p>1pm to 7pm on Fridays <i>(sometimes, call ahead)</i> </p>
+        <p>1pm to 7pm on Saturdays <i>(guaranteed)</i> </p>
+        <p>1pm to 4pm on Sundays <i>(guaranteed)</i> </p>
+    </div>
+    <br>
+    </center>
+    </body>
+    <center>
+    <footer>
+    <!-- This is the page footer-->
+    </a> | <a href="https://oly-wa.us/olygeek/Sales.php">Sales Items
+    </a> | <a href="https://oly-wa.us/olygeek/Products.php">Products
+    </a> | <a href="https://oly-wa.us/olygeek/About.php">About
+    </a> | <a href="https://oly-wa.us/olygeek/Computers.php">Computers
+    </a> | <a href="https://oly-wa.us/olygeek/Recycling.php">Recycling
+    </a> | <a href="https://oly-wa.us/olygeek/DropOff.php">Drop Off
+    </a> | <a href="https://oly-wa.us/olygeek/Links.php">Links
+    </a> | <a href="https://oly-wa.us/olygeek/Involved.php">Get Involved
+    </a> | <a href="https://oly-wa.us/olygeek/Contacts.php">Contacts</a>
+    <hr class="w">
+    Copyright 2022, All rights reserved.
+    <br>
+    Website by <a href="https://agentseed.org">Cedar DeLacy</a>
+    </footer></center>
+</html>
+<script> // Every five seconds it'll chose a random one of these phrases to display on the banner at the top of the page.
+    var phrases = [
+        // You can add as many phrase here as you want, just make sure to surround each prase with single quotes, and comma seperate them.
+        'There are some vintage Apple 512s here, come in and make an offer!',
+        'the digital world for everyone...',
+        'recycling! -- reuse! -- refurbishing! -- resale!',
+        'CRE&amp;T Computers - - There IS a Difference!',
+        'see how we protect your privacy!',
+        'Website by Cedar DeLacy, "I thought it looked bad"!',
+        'Have you tried turning it off and on again?',
+        'Come at me Scott Bishop!',
+        'HTML rules, PHP drools!',
+        'Comes, redesigns website, refuses to elaborate, leaves!',
+        'All jokes aside, Olygeek is great!',
+        'Support local businesses!'
+        ]
+    // This part choses a random number that's not bigger than the amount of items in the list, then displays the corrasponding list item in the banner
+    var phraseLength = phrases.length;
+    function marquee() {
+        var num = randomNumber(phraseLength);
+        document.getElementById('banner').innerHTML = phrases[num];
+    }
+    // Simple random number generator
+    function randomNumber(max) {
+        return Math.floor(Math.random() * max);
+    }
+    // Changes the phrase every five seconds (5,000 miliseconds)
+    function changeMarquee() {
+    timer = setInterval(function() {marquee();}, 5000);
+    console.log("Script loaded...")
+}</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Rounded&display=swap');
+    :root {
+        --accent: #b09266;
+        --accent2: #1f314a;
+    }
+    #banner {
+        top: 0px;
+        margin-top: 0px;
+        text-align: center;
+        /*background: linear-gradient(90deg, #ffde00 0%, #00ff62 25%, #0052ff 50%, #eb00ff 75%, #ff004a 100%);*/
+        background: var(--accent);
+        color: white;
+        font-size: 14pt;
+        font-family: 'Abel', sans-serif;
+        margin: none;
+        border: none;
+        padding: 10px;
+        background-size: 400%;
+        animation: ani infinite 15s;
+        width: 100%;
+        left: 0px;
+        margin-left: 0px;
+    }
+    #banner a {
+        color: white;
+    }
+    @keyframes ani {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
+    .panel {
+        width: 70%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        color: white;
+        padding: 20px;
+    }
+    html {
+        background-image: url("https://images.unsplash.com/photo-1592659762303-90081d34b277");
+        background-size: cover;
+        background-position: middle;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+    ::selection {
+        background-color: var(--accent);
+        color: var(--accent2);
+    }
+    body {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    p, ul {
+        font-size: 15pt;
+        line-height: 1.3;
+        font-family: 'Open Sans', sans-serif;
+    }
+    h3 {
+        font-size: 16pt;
+        font-family: 'Open Sans', sans-serif;
+    }
+    #linklist, #linklist a {
+        font-size: 16pt;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        word-spacing: 5px;
+    }
+    #linklist a:hover {
+        text-decoration: none;
+        color: var(--accent);
+    }
+    .placeholder {
+        font-family: 'Flow Rounded', cursive;
+    }
+    .w {
+        border-style: none none solid none;
+        border-width: 2px;
+        border-color: var(--accent);
+        width: 30%;
+    }
+    a {
+        color: var(--accent);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    footer {
+        width: 70%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        color: white;
+        padding: 20px;
+    }
+</style>
